@@ -4,60 +4,75 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/script.js"></script>
     <title>A less fantastical adventure</title>
   </head>
   <body>
     <div class="container">
-      <h1>Welcome to Hydroflask Centeral</h1>
-        <p>
-          We have a wide variety of hydroflasks for your portable liquid needs
-          To get started with your oder, please input your name and shipping address
-          in the forms below!
+      <h1>Welcome to Hydroflask Central</h1>
+        <div id="hydro">
+          <p>
+            We have a wide variety of hydroflasks for your portable liquid needs
+            To get started with your oder, please input your name and shipping address
+            in the forms below!
 
-        </p>
+          </p>
 
-        <form>
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input id="firstName" class="form-control" type="text">
-          </div>
+          <form>
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input id="firstName" class="form-control" type="text">
+            </div>
 
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input id="lastName" class="form-control" type="text">
-          </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input id="lastName" class="form-control" type="text">
+            </div>
 
-          <div class="form-group">
-            <label for="streetAddress">Street Address</label>
-            <input id="streetAddress" class="form-control" type="text">
-          </div>
+            <div class="form-group">
+              <label for="streetAddress">Street Address</label>
+              <input id="streetAddress" class="form-control" type="text">
+            </div>
 
-          <div class="form-group">
-            <label for="cityName">City</label>
-            <input id="cityName" class="form-control" type="text">
-          </div>
+            <div class="form-group">
+              <label for="cityName">City</label>
+              <input id="cityName" class="form-control" type="text">
+            </div>
 
-          <div class="form-group">
-            <label for="stateName">State</label>
-            <input id="stateName" class="form-control" type="text">
-          </div>
+            <div class="form-group">
+              <label for="stateName">State</label>
+              <input id="stateName" class="form-control" type="text">
+            </div>
 
-          <div class="form-group">
-            <label for="zipCode">Zip Code</label>
-            <input id="zipCode" class="form-control" type="text">
-          </div>
+            <div class="form-group">
+              <label for="zipCode">Zip Code</label>
+              <input id="zipCode" class="form-control" type="text">
+            </div>
+
+            <button type="submit" class="btn" id="submit">Submit to purchase.</button>
+
+          </form>
+          <a href="/receipt.html" class="receipt"></a>
+      </div>
+      <div class="container" id="receipt">
 
 
+      <h1>Thank you <span class="firstName"></span> <span class="lastName"></span> for your order.  Please print this page for your records!</h1>
 
-        </form>
-        <div class="form">
+      <h2>Order Confirmation</h2>
+
+      <p>
+        We are shipping your HydroFlask to this adress:<br>
+        <span class="streetAddress"></span><br>
+        <span class="cityName"></span>, <span class="stateName"></span> <span class="zipCode"></span>
+
+      </p>
 
 
-        </div>
+      </div>
+
+
     </div>
 
   </body>
 </html>
-
-Create a website with a form on it to take the user's full name and address as if they were ordering a product from you. After they submit the form you should show them a receipt. Thank them for purchasing whatever it is you are selling, and be sure to use their full name. Then reprint their address as a confirmation of shipping details.
