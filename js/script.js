@@ -16,10 +16,29 @@ $(document).ready(function() {
     $(".zipCode").text(zipCodeInput);
 
     $("#hydro").hide();
-    $("#receipt").show();
+    $("#survey").show();
 
     event.preventDefault();
+  });
 
 
+    $("#survey form").submit(function() {
+      var favoritePizzaToppingInput = $("input#favoritePizzaTopping").val();
+      var favoriteTunesInput = $("input#favoriteTunes").val();
+      var favoriteMovieInput = $("input#favoriteMovie").val();
+      var favoriteDrinkInput = $("input#favoriteDrink").val();
+
+
+
+      $(".favoritePizzaTopping").text(favoritePizzaToppingInput);
+      $(".favoriteTunes").text(favoriteTunesInput);
+      $(".favoriteMovie").text(favoriteMovieInput);
+      $(".favoriteDrink").text(favoriteDrinkInput);
+
+
+      $("#receipt").show();
+      $("#survey").hide();
+
+      event.preventDefault();
   });
 });

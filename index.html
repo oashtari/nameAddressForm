@@ -52,12 +52,51 @@
             <button type="submit" class="btn" id="submit">Submit to purchase.</button>
 
           </form>
-          <a href="/receipt.html" class="receipt"></a>
       </div>
+
+
+      <div id="survey">
+        <p>
+          While we process your order, we'd love to get to know you a little better!<br>
+          Please answer the following survey questions, we'd really appreciate it.<br>
+          Thanks again!!! :)
+        </p>
+
+        <form>
+          <div class="form-group">
+            <label for="favoritePizzaTopping">Your favorite topping on melting cheese?</label>
+            <input id="favoritePizzaTopping" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="favoriteTunes">What's that song you listen to on repeat?</label>
+            <input id="favoriteTunes" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="favoriteMovie">What movie would you pay $20 to watch again?</label>
+            <input id="favoriteMovie" class="form-control" type="text">
+          </div>
+
+          <div class="form-group">
+            <label for="favoriteDrink">Do you like coffee or tea?</label>
+            <input id="favoriteDrink" class="form-control" type="text">
+          </div>
+
+          <button type="submit" class="btn" id="submit">Submit to finalize purchase.</button>
+
+        </form>
+    </div>
+
+
+
       <div class="container" id="receipt">
 
 
       <h1>Thank you <span class="firstName"></span> <span class="lastName"></span> for your order.  Please print this page for your records!</h1>
+
+      <h2>Well <span class="firstName"></span> we're so glad to know you love <span class="favoritePizzaTopping"></span> on your pizza, along with a cold refreshing <span class="favoriteDrink"></span>!</h2>
+
 
       <h2>Order Confirmation</h2>
 
