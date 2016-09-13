@@ -65,7 +65,24 @@
         <form>
           <div class="form-group">
             <label for="favoritePizzaTopping">Your favorite topping on melting cheese?</label>
-            <input id="favoritePizzaTopping" class="form-control" type="text">
+              <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="pepperoni" checked>
+                Pepperoni
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="sausage">
+                Sausage
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="flavor" value="veggies">
+                Veggies
+              </label>
+            </div>
           </div>
 
           <div class="form-group">
@@ -78,9 +95,13 @@
             <input id="favoriteMovie" class="form-control" type="text">
           </div>
 
-          <div class="form-group">
-            <label for="favoriteDrink">Do you like coffee or tea?</label>
-            <input id="favoriteDrink" class="form-control" type="text">
+          <div>
+          <label for="favoriteDrink">Do you like coffee or tea?</label><br>
+          <select class="form-group" id="favoriteDrink">
+
+            <option>coffee</option>
+            <option>tea</option>
+          </select>
           </div>
 
           <button type="submit" class="btn" id="submit">Submit to finalize purchase.</button>

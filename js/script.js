@@ -23,10 +23,10 @@ $(document).ready(function() {
 
 
     $("#survey form").submit(function() {
-      var favoritePizzaToppingInput = $("input#favoritePizzaTopping").val();
+      var favoritePizzaToppingInput = $("input:radio[name=flavor]:checked").val();
       var favoriteTunesInput = $("input#favoriteTunes").val();
       var favoriteMovieInput = $("input#favoriteMovie").val();
-      var favoriteDrinkInput = $("input#favoriteDrink").val();
+      var favoriteDrinkInput = $("#favoriteDrink").val();
 
 
 
