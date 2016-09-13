@@ -27,7 +27,7 @@ $(document).ready(function() {
       var favoriteTunesInput = $("input#favoriteTunes").val();
       var favoriteMovieInput = $("input#favoriteMovie").val();
       var favoriteDrinkInput = $("#favoriteDrink").val();
-
+      var favoriteColorInput = $("#color").val();
 
 
       $(".favoritePizzaTopping").text(favoritePizzaToppingInput);
@@ -36,8 +36,10 @@ $(document).ready(function() {
       $(".favoriteDrink").text(favoriteDrinkInput);
 
 
+        $("#receipt").css('background-color', favoriteColorInput);
       $("#receipt").show();
       $("#survey").hide();
+
 
       event.preventDefault();
   });
